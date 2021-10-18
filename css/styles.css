@@ -1,0 +1,278 @@
+:root {
+  --animate-duration: 3s;
+  --animate-delay: 2s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f7fa;
+  padding: 40px;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.wrapper {
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+.sidebar {
+  background: #1e2939;
+  min-width: 320px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.my-photo {
+  width: 100%;
+}
+
+.content {
+  padding: 80px 70px;
+}
+.contacts {
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.contacts-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.contacts-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #737a84;
+  transition: color 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #ffffff;
+  animation: animate_pulse 1.5s infinite;
+}
+
+.contacts-icon {
+  vertical-align: middle;
+  margin-right: 5px;
+  fill: #e9967a;
+}
+
+.contacts-link:hover .contacts-icon {
+  fill: #ffffff;
+}
+
+.contacts-link-type {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+.tech-skills-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.tech-skills-container {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 55px;
+}
+.tech-skills-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: darksalmon;
+  margin-left: 15px;
+}
+.tech-skills-text {
+  color: #b4b8bd;
+}
+
+.tech-skills-junior {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 55px;
+}
+
+.tech-skills-junior-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.soft-skills-container {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 55px;
+}
+.soft-skills-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.soft-skills-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: darksalmon;
+  margin-left: 15px;
+}
+.soft-skills-text {
+  color: #b4b8bd;
+}
+.profession {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.name {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.profile {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #504040;
+  margin-top: 24px;
+}
+.main-info {
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.main-info:hover,
+.projects-box:hover,
+.experience:hover {
+  box-shadow: 0px 5px 15px 0px rgba(85, 85, 85, 0.5);
+  border-radius: 10px;
+}
+
+.about-me-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.projects-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #595959;
+  transition: color 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    font-size 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    font-weight 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects-link:hover,
+.projects-link:focus {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e2939;
+}
+
+.tech-name {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #595959;
+}
+.dots {
+  color: #bebebe;
+  font-weight: 100;
+}
+.numbers {
+  font-weight: 700;
+  margin-left: 17px;
+}
+
+.projects-box {
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+.experience {
+  padding: 20px;
+}
+
+.job-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.company {
+  color: #e9967a;
+}
+.job-period {
+  color: #a8a8a8;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.line {
+  color: #000000;
+}
+.duties {
+  margin-top: 14px;
+  margin-bottom: 30px;
+  margin-left: 17px;
+}
+.duties-text {
+  color: #504040;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.university {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: darksalmon;
+  margin-bottom: 15px;
+}
+.diploma {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 14px;
+}
+
+@keyframes animate_pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(92, 82, 83, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(228, 25, 49, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(105, 96, 96, 0);
+  }
+}
