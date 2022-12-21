@@ -3,35 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume Nadiia Buchnieva</title>
+    <title>Portfolio of Nadiia Buchnieva</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap&subset=cyrillic"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/media.css" />
-    <link
+
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    /> -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@splidejs/splide/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
 
   <body>
     <!-- main container -->
     <div class="wrapper">
       <aside class="sidebar">
-        <img class="my-photo" src="./img/IMG_606.jpg" alt="My photo" />
+        <img class="my-photo" src="./img/IMG_uzh.jpg" alt="My photo" />
 
         <!-- contacts container -->
         <div class="contacts">
           <h3 class="contacts-title">Contacts</h3>
-          <div>
+          <!-- <div>
             <a class="contacts-link" href="tel:380969468353"
               ><svg width="26" height="26" class="contacts-icon">
                 <use href="./img/icons.svg#call_icon"></use>
               </svg>
               +38096 946 83 53</a
+            >
+          </div> -->
+          <div>
+            <a class="contacts-link" href="mailto:info@5w155.ch"
+              ><svg width="26" height="26" class="contacts-icon">
+                <use href="./img/icons.svg#email_icon"></use>
+              </svg>
+              info@5w155.ch</a
             >
           </div>
           <div>
@@ -72,6 +85,12 @@
               <span class="tech-skills-text">SASS/SCSS</span>
             </li>
             <li class="tech-skills-item">
+              <span class="tech-skills-text">Javascript</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-text">Webflow</span>
+            </li>
+            <li class="tech-skills-item">
               <span class="tech-skills-text">Git/GitHub</span>
             </li>
             <li class="tech-skills-item">
@@ -88,7 +107,7 @@
           <h3 class="soft-skills-title">Soft skills</h3>
           <ul>
             <li class="soft-skills-item">
-              <span class="soft-skills-text">Scrum</span>
+              <span class="soft-skills-text">Responsibility</span>
             </li>
             <li class="soft-skills-item">
               <span class="soft-skills-text">Perseverance</span>
@@ -110,29 +129,31 @@
       <div class="content">
         <!-- about me main info -->
         <div
-          class="
-            main-info
-            animate__animated animate__fadeInRight animate__delay-1s
-          "
+          class="main-info animate__animated animate__fadeInRight animate__delay-1s"
         >
-          <h2 class="profession">Junior HTML-coder</h2>
+          <h2 class="profession">UI developer & Webflow specialist</h2>
           <h1 class="name">Nadiia Buchnieva</h1>
           <div class="photo-canvas">
             <img
               class="my-photo-mobile"
-              src="./img/IMG_606.jpg"
+              src="./img/IMG_uzh.jpg"
               alt="My photo"
             />
           </div>
           <p class="profile">
-            I have an experience in web implementation as a content-manager
+            <!-- I have an experience in web implementation as a content-manager
             since 2017. My previous job included maintaining of different sites,
             working with popular CMS, creating pages and menu elements by using
             templates, editing HTML/CSS code, creating new web-pages using
             HTML/CSS, preparing files for uploading. Seeking a friendly team of
             professionals to improve my tech skills and ready to meet new
             challenging tasks. Always aiming to ensure a high quality in my work
-            and resolve problems efficiently.
+            and resolve problems efficiently. -->
+            UI developer and Webflow specialist with a vast experience in
+            creating and maintaining websites. Wide experience in implementing
+            pixel-perfect design with HTML/CSS and Webflow. Able to implement
+            JavaScript scripts to make the webpage interactive and communicate
+            with backend services.
           </p>
         </div>
 
@@ -141,6 +162,12 @@
             <span class="contacts-link-type">Т:</span>
             <a class="contacts-link" href="tel:380969468353"
               >+380 96 946 8353</a
+            >
+          </div>
+          <div>
+            <span class="contacts-link-type">E:</span>
+            <a class="contacts-link" href="mailto:info@5w155.ch"
+              >info@5w155.ch</a
             >
           </div>
           <div>
@@ -167,6 +194,12 @@
               <span class="tech-skills-text">SASS/SCSS</span>
             </li>
             <li class="tech-skills-item">
+              <span class="tech-skills-text">Javascript</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-text">Webflow</span>
+            </li>
+            <li class="tech-skills-item">
               <span class="tech-skills-text">Git/GitHub</span>
             </li>
             <li class="tech-skills-item">
@@ -182,7 +215,7 @@
           <h3 class="soft-skills-junior-title">Soft skills</h3>
           <ul>
             <li class="soft-skills-item">
-              <span class="soft-skills-text">Scrum</span>
+              <span class="soft-skills-text">Responsibility</span>
             </li>
             <li class="soft-skills-item">
               <span class="soft-skills-text">Perseverance</span>
@@ -201,13 +234,219 @@
 
         <!-- projects -->
         <div
-          class="
-            projects-box
-            animate__animated animate__fadeInRight animate__delay-2s
-          "
+          class="projects-box animate__animated animate__fadeInRight animate__delay-2s"
         >
           <h3 class="about-me-title">Projects</h3>
-          <ol>
+          <ul class="project list">
+            <li class="item">
+              <div class="project-card">
+                <a
+                  class="link"
+                  href="https://cryptoro.capital/#"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/cryptoro.jpg"
+                    alt="Website for the Cryptoro Capital"
+                    width="370"
+                    height="294"
+                    class="project-pic"
+                  />
+                  <div class="project-overlay">
+                    <p class="project-overlay-text">
+                      Based on Webflow technology
+                    </p>
+                  </div>
+                  <div class="project-content">
+                    <h2 class="names">Cryptoro Capital</h2>
+                    <p class="description">Website</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="project-card">
+                <a
+                  class="link"
+                  href="https://droitdanslemille.ch/"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/droitdanslemille.jpg"
+                    alt="Online legal advice website"
+                    width="370"
+                    height="294"
+                    class="project-pic"
+                  />
+                  <div class="project-overlay">
+                    <p class="project-overlay-text">
+                      Based on Webflow technology
+                    </p>
+                  </div>
+                  <div class="project-content">
+                    <h2 class="names">Online legal advice service</h2>
+                    <p class="description">Website</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="project-card">
+                <a
+                  class="link"
+                  href="https://henriette.webflow.io/"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/henriette.webflow.jpg"
+                    alt="Henriette fund website"
+                    width="370"
+                    height="294"
+                    class="project-pic"
+                  />
+                  <div class="project-overlay">
+                    <p class="project-overlay-text">
+                      Based on Webflow technology
+                    </p>
+                  </div>
+                  <div class="project-content">
+                    <h2 class="names">Henriette charity Fund</h2>
+                    <p class="description">Website</p>
+                  </div></a
+                >
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="project-card">
+                <a
+                  class="link"
+                  href="https://ardeewest.github.io/ice-cream-team-project/"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/ice-cream-team-project_.jpg"
+                    alt="Ice cream store landing"
+                    width="370"
+                    height="294"
+                    class="project-pic"
+                  />
+                  <div class="project-overlay">
+                    <p class="project-overlay-text">
+                      Based on HTML/CSS/Javascript technologies
+                    </p>
+                  </div>
+                  <div class="project-content">
+                    <h2 class="names">Ice cream store landing</span></h2>
+                    <p class="description">Website</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="project-card">
+                <a class="link" href="https://ardeewest.github.io/dronestore/" rel="noreferrer noopener" target="_blank">
+                  <img
+                    src="./img/dronestore_.jpg"
+                    alt="Drones store website"
+                    width="370"
+                    height="294"
+                    class="project-pic"
+                  />
+                  <div class="project-overlay">
+                    <p class="project-overlay-text">
+                      Based on HTML/CSS/Javascript technologies
+                    </p>
+                  </div>
+                  <div class="project-content">
+                    <h2 class="names">Drones store</h2>
+                    <p class="description">Website</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="project-card">
+                <a class="link" href="https://ardeewest.github.io/furniture_bootstrap/" rel="noreferrer noopener" target="_blank">
+                  <img
+                    src="./img/furniture_bootstrap_.jpg"
+                    alt="Furniture website"
+                    width="370"
+                    height="294"
+                    class="project-pic"
+                  />
+                  <div class="project-overlay">
+                    <p class="project-overlay-text">
+                      Based on Bootstrap technology
+                    </p>
+                  </div>
+                  <div class="project-content">
+                    <h2 lang="en" class="names">Furnitute webstore</h2>
+                    <p class="description">Website</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="project-card">
+                <a class="link" href="https://ardeewest.github.io/goit-markup-hw-08/" rel="noreferrer noopener" target="_blank">
+                  <img
+                    src="./img/markup-hw-08_.jpg"
+                    alt="Webstudio site"
+                    width="370"
+                    height="294"
+                    class="project-pic"
+                  />
+                  <div class="project-overlay">
+                    <p class="project-overlay-text">
+                      Based on HTML/CSS/SASS technologies
+                    </p>
+                  </div>
+                  <div class="project-content">
+                    <h2 class="names">
+                      Two-pages Webstudio site 
+                    </h2>
+                    <p class="description">Website</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="project-card">
+                <a class="link" href="https://new-agency.netlify.app/" rel="noreferrer noopener" target="_blank">
+                  <img
+                    src="./img/new-agency.netlify.jpg"
+                    alt="Creative agency website"
+                    width="370"
+                    height="294"
+                    class="project-pic"
+                  />
+                  <div class="project-overlay">
+                    <p class="project-overlay-text">
+                      Based on HTML/CSS technologies
+                    </p>
+                  </div>
+                  <div class="project-content">
+                    <h2 class="names">Creative agency</h2>
+                    <p class="description">Website</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+          <!-- <ol>
             <li class="numbers">
               <a
                 target="_blank"
@@ -264,20 +503,17 @@
                 >User Profile</a
               >
             </li>
-          </ol>
+          </ol> -->
         </div>
 
         <!-- work experience -->
-        <div class="experience">
+        <!-- <div class="experience">
           <h3
-            class="
-              about-me-title
-              animate__animated animate__fadeInRight animate__delay-3s
-            "
+            class="about-me-title animate__animated animate__fadeInRight animate__delay-3s"
           >
             Work experience
           </h3>
-          <!-- company #1 -->
+          
           <div class="animate__animated animate__fadeInRight animate__delay-3s">
             <h4 class="job-title">
               Content-manager, html-coder
@@ -337,7 +573,7 @@
               </li>
             </ul>
           </div>
-          <!-- company #2 -->
+          
           <div class="animate__animated animate__fadeInUp animate__delay-4s">
             <h4 class="job-title">
               Content-manager, editor
@@ -367,10 +603,10 @@
                 scheduled. Using Trello, controlling the deadlines.
               </li>
             </ul>
-          </div>
+          </div> -->
 
           <!-- education -->
-          <div class="animate__animated animate__fadeInUp animate__delay-4s">
+          <!-- <div class="animate__animated animate__fadeInUp animate__delay-4s">
             <h3 class="about-me-title">Education</h3>
             <div>
               <h4 class="university">
@@ -392,10 +628,10 @@
               >
               <h5 class="diploma">Faculty of mass communication</h5>
             </div>
-          </div>
-
+          </div> -->
         </div>
       </div>
     </div>
+  
   </body>
 </html>
