@@ -289,6 +289,7 @@ a {
   color: #e9967a;
   font-size: 16px;
   line-height: 1.87;
+  font-weight: 500;
 }
 
 .project.list {
@@ -304,12 +305,15 @@ a {
 
 .project-pic {
   border: 1px solid #eeeeee;
+  object-fit: cover;
+  object-position: top;
 }
 
 .project-content {
   position: relative;
   z-index: 1;
   padding: 20px 24px;
+  background-color: #f3f3f3;
 
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
