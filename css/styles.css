@@ -309,6 +309,10 @@ a {
   object-position: top;
 }
 
+.project-pic.project-pic_position-left {
+  object-position: 0% 100%;
+}
+
 .project-content {
   position: relative;
   z-index: 1;
